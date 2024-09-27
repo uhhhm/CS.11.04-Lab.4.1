@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) throws Exception{
         System.out.println(parenthesesCheck("(())(())"));
         System.out.println(reverseInteger(513202));
-        System.out.println(encryptThis("sigma gooning balls skibidi"));
-        System.out.println(decipherThis("115agmi 103gonino 98slla 115iibidk"));
+        System.out.println(encryptThis("test testing very pressing"));
+        System.out.println(decipherThis("116tse 116gstine 118yre 112gessinr"));
 
     }
     // 1. parenthesesCheck
