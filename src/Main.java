@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) throws Exception{
         System.out.println(parenthesesCheck("(())(())"));
         System.out.println(reverseInteger(513202));
+        System.out.println(reverseInteger(-1239847));
         System.out.println(encryptThis("test testing very pressing"));
         System.out.println(decipherThis("116tse 116gstine 118yre 112gessinr"));
 
@@ -26,10 +27,20 @@ public class Main {
         // 2. reverseInteger
     public static String reverseInteger(int a){
         int b = 0;
+        if(a<0){
+            a *= -1;
+            while(a > 0){
+                b = b * 10 + a%10;
+                a /= 10;
+            }
+            b *= -1;
+            return Integer.toString(b);
+        }
         while(a > 0){
             b = b * 10 + a%10;
             a /= 10;
         }
+
         return Integer.toString(b);
     }
     public static String encryptThis(String a) {
